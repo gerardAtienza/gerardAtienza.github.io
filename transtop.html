@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transtop - Empresa de Biomasa</title>
+  <style>
+    /* Estilos CSS básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      background-color: #333; /* Cambiar el color de fondo del texto principal a gris oscuro */
+      color: #fff; /* Cambiar el color de texto del texto principal a blanco */
+    }
+
+    /* Estilos específicos */
+    .banda {
+      background-color: #4E9B4E;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .estetica {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .coherente {
+      color: #fff; /* Cambiar el color de texto del elemento "coherente" a blanco */
+    }
+    
+
+    .informacion {
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      background-color: #222; /* Cambiar el color de fondo del menú a un gris más oscuro */
+      color: #fff; /* Cambiar el color de texto del menú a blanco */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 10px;
+    }
+
+    .boton-menu:hover {
+      color: #4E9B4E; /* Cambiar el color del texto a verde cuando se hace hover */
+    }
+
+    .boton-menu:active {
+      outline: 1px solid #555; /* Agregar un contorno más oscuro al hacer clic en el botón */
+    }
+
+    .contacto textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: #555; /* Cambiar el color de fondo de la caja de mensaje a gris oscuro */
+      color: #fff; /* Cambiar el color de texto de la caja de mensaje a blanco */
+    }
+
+    .contacto {
+      background-color: #4E9B4E;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contacto h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contacto p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contacto label {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .contacto input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .contacto input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* Estilos para el slideshow */
+    .slideshow-container {
+      width: 60%;
+      padding-left: 300px; /*gitanada*/
+      height: 400px; /* Adjust the height according to your needs */
+      overflow: hidden;
+      position: relative;
+      display: flex; /* Add display:flex to enable flexbox */
+      justify-content: center; /* Center-align the images horizontally */
+      align-items: center; /* Center-align the images vertically */
+    }
+
+    .slideshow-container img {
+      display: none;
+      max-width: 100%; /* Use max-width instead of width */
+      height: auto;
+      object-fit: contain; /* Use object-fit: contain to maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transtop Systems</h1>
+  </header>
+
+  <div class="banda">
+    <h2>Transtop - Líder en Biomasa</h2>
+    <p>Especialistas en mecanizados de distribución de combustibles sostenibles.</p>
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#" class="boton-menu">Inicio</a></li>
+      <li><a href="#" class="boton-menu">Sobre Nosotros</a></li>
+      <li><a href="#" class="boton-menu">Productos</a></li>
+      <li><a href="#" class="boton-menu">Contacto</a></li>
+    </ul>
+  </div>
+
+  <section class="slideshow">
+    <div class="slideshow-container">
+      <img src="C:\Users\gerix\OneDrive\Documentos\web dev\pelets1.jpg" alt="Imagen 1">
+      <img src="C:\Users\gerix\OneDrive\Documentos\web dev\pelets2.jpg" alt="Imagen 2">
+      <img src="C:\Users\gerix\OneDrive\Documentos\web dev\pelets3.jpg" alt="Imagen 3">
+    </div>
+  </section>
+
+  <main>
+    <section class="estetica">
+      <h2>Sobre Nosotros</h2>
+      <p>Transtop es una empresa líder en el sector de la biomasa, especializada en la maquinaria de distribución de combustibles sostenibles. Nuestro objetivo es proporcionar soluciones energéticas renovables y respetuosas con el medio ambiente.</p>
+    </section>
+
+    <section class="coherente">
+      <h2>Productos y Servicios</h2>
+      <ul>
+        <li>Máquinas de mecanizado y distribución de biocombustibles</li>
+        <li>Máquinas para pellets de biomasa</li>
+        <li>Máquinas para briquetas de biomasa</li>
+        <li>Servicios de asesoramiento y consultoría en sistemas de biomasa</li>
+        <li>Instalación y mantenimiento de sistemas de calefacción y calderas de biomasa</li>
+      </ul>
+    </section>
+
+    <section class="informacion">
+      <h2>Contacto</h2>
+      <p>Puedes contactarnos a través de los siguientes medios:</p>
+      <ul>
+        <li>Teléfono: 123-456-789</li>
+        <li>Correo electrónico: info@transtop.com</li>
+        <li>Dirección: Calle Principal, 12345 Ciudad, País</li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¡Estamos encantados de ayudarte! Utiliza el formulario a continuación para enviarnos tus consultas o comentarios.</p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <script>
+    // Script para el slideshow
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Cambia las imágenes cada 2 segundos (ajusta el tiempo según tus necesidades)
+    }
+
+    // Animación de botones del menú
+    var menuButtons = document.getElementsByClassName("boton-menu");
+    for (var i = 0; i < menuButtons.length; i++) {
+      menuButtons[i].addEventListener("mouseover", function() {
+        this.style.color = "#4E9B4E"; // Cambia el color de las letras al verde de la banda
+      });
+      menuButtons[i].addEventListener("mouseout", function() {
+        this.style.color = "#fff"; // Cambia el color de las letras al blanco
+      });
+      menuButtons[i].addEventListener("click", function() {
+        this.style.outlineColor = "#333"; // Oscurece el contorno del botón
+      });
+    }
+  </script>
+</body>
+</html>
