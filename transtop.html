@@ -6,6 +6,11 @@
   <title>Transtop - Empresa de Biomasa</title>
   <style>
     /* Estilos CSS básicos */
+
+    html {
+  scroll-behavior: smooth;
+  }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -14,9 +19,13 @@
 
 
     header {
-      background-color: #9bfc94;
       color: hwb(0 0% 100%);
       padding: 20px;
+      text-align: center;
+    }
+
+    .client {
+      color: #b30fd7;
       text-align: center;
     }
 
@@ -27,11 +36,11 @@
     }
 
     /* Estilos específicos */
-    .banda {
-      background-color: #4E9B4E;
+    .titol {
+      background-color: #c1d6c1;
       padding: 20px;
       color: #000000;
-      text-align: center;
+      font-style: italic;
     }
 
     .estetica {
@@ -51,15 +60,15 @@
     }
 
     .menu {
-      background-color: #222; /* Cambiar el color de fondo del menú a un gris más oscuro */
+      background-color: #999595; /* Cambiar el color de fondo del menú a un gris más oscuro */
       color: #fff; /* Cambiar el color de texto del menú a blanco */
       padding: 10px;
-      text-align: center;
+      text-align: right;
     }
 
     .menu ul {
       list-style-type: none;
-      margin: 0;
+      margin: 0px;
       padding: 0;
     }
 
@@ -69,17 +78,17 @@
     }
 
     .menu li a {
-      text-decoration: none;
+      text-decoration: wavy;
       color: #fff;
-      padding: 5px 10px;
+      padding: 20px 40px;
     }
 
     .boton-menu:hover {
-      color: #4E9B4E; /* Cambiar el color del texto a verde cuando se hace hover */
+      color: #37cde1; /* Cambiar el color del texto a verde cuando se hace hover */
     }
 
     .boton-menu:active {
-      outline: 1px solid #555; /* Agregar un contorno más oscuro al hacer clic en el botón */
+      /*Enciara sha d posar algo*/
     }
 
     .contacto textarea {
@@ -139,8 +148,9 @@
 
     /* Estilos para el slideshow */
     .slideshow-container {
-      width: 60%;
-      padding-left: 300px; /*gitanada*/
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
       height: 400px; /* Adjust the height according to your needs */
       overflow: hidden;
       position: relative;
@@ -149,33 +159,50 @@
       align-items: center; /* Center-align the images vertically */
     }
 
-    .slideshow-container img {
-      display: none;
-      max-width: 100%; /* Use max-width instead of width */
-      height: auto;
-      object-fit: contain; /* Use object-fit: contain to maintain aspect ratio */
-    }
+  .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slideshow-container img {
+  display: none;
+  max-width: 100%; /* Use max-width instead of width */
+  height: auto;
+  object-position: 0cqmax; /* Use object-fit: contain to maintain aspect ratio */
+}
+
+
   </style>
 </head>
 <link rel="icon" href="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/logo.png" type="image/x-icon">
 <body>
   <header>
-    <div class="banda">
-    <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/logo.png" alt="Imagen logo" style="width: 80px; height: 80px; margin-top: -50px; margin-left: 150px;">
-    <h1>Transtop Systems</h1>
-    <p>Líderes en biomasa</p>
-    <p>Especialistas en mecanizados de distribución de combustibles sostenibles.</p>
+    <div class="titol">
+    <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/logo.png" alt="Imagen logo" style="width: 70px; height: 70px; position: absolute; top: 20px; left: 320px;">
+    <h1 style = "position: absolute; top: 20px; left: 30px;"> Transtop Systems</h1>
   </div>
- </header>
-
   <div class="menu">
     <ul>
-      <li><a href="#" class="boton-menu">Clientes</a></li>
-      <li><a href="#" class="boton-menu">Sobre Nosotros</a></li>
-      <li><a href="#" class="boton-menu">Productos</a></li>
+      <li><a href="#seccioClients" class="boton-menu">Clientes</a></li>
+      <li><a href="#seccioSobreNos" class="boton-menu">Sobre Nosotros</a></li>
+      <li><a href="#seccioProductes" class="boton-menu">Productos</a></li>
       <li><a href="#" class="boton-menu">Contacto</a></li>
     </ul>
   </div>
+ </header>
+
+ <p style="text-align: center;">Líderes en biomasa</p>
+ <p style="text-align: center;">Especialistas en mecanizados de distribución de combustibles sostenibles.</p>
+ 
 
   <section class="slideshow">
     <div class="slideshow-container">
@@ -192,8 +219,14 @@
       <p>Transtop es una empresa líder en el sector de la biomasa, especializada en la maquinaria de distribución de combustibles sostenibles. Nuestro objetivo es proporcionar soluciones energéticas renovables y respetuosas con el medio ambiente.</p>
     </section>
 
+    <section class="client">
+      <p id="seccioClients">
+        Succesfull clients
+      </p>
+    </section>
+
     <section class="coherente">
-      <h2>Productos y Servicios</h2>
+      <p id="seccioProductes">Productos y Servicios</p>
       <ul>
         <li>Máquinas de mecanizado y distribución de biocombustibles</li>
         <li>Máquinas para pellets de biomasa</li>
@@ -204,7 +237,7 @@
     </section>
 
     <section class="informacion">
-      <h2>Contacto</h2>
+      <h2 id="seccioSobreNos">SOBRE NOSALTRES</h2>
       <p>Puedes contactarnos a través de los siguientes medios:</p>
       <ul>
         <li>Teléfono: 123-456-789</li>
@@ -237,15 +270,19 @@
     showSlides();
 
     function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
       }
+
       slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 4000); // Cambia las imágenes cada 2 segundos (ajusta el tiempo según tus necesidades)
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].classList.add("active");
+
+      setTimeout(showSlides, 4000);
     }
 
     // Animación de botones del menú
