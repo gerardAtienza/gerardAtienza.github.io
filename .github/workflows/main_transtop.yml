@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'Transtop'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A83C08DB5B424E7E8CE2BAC99944DF8F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D8B162F7AA7849BEAB6BEF90D15741A2 }}
           package: .
