@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transtop - Empresa de Biomasa</title>
+  <style>
+    /* Estilos CSS básicos */
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .image-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    body {
+      background: linear-gradient(to right, #ffffff, #9ac499);
+    background-repeat: repeat;
+    }
+
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .client {
+      color: #b30fd7;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      background: linear-gradient(to right, #ffffff, #9ac499);
+    background-repeat: repeat;
+    }
+
+    /* Estilos específicos */
+    .titol {
+      padding: 20px;
+      color: #000000;
+      font-style: italic;
+    }
+
+    .estetica {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .coherente {
+      color: #fff; /* Cambiar el color de texto del elemento "coherente" a blanco */
+    }
+    
+
+    .informacion {
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      background-color: #ffffff; /* Cambiar el color de fondo del menú a un gris más oscuro */
+      color: #fff; /* Cambiar el color de texto del menú a blanco */
+      padding: 25px;
+      text-align: right;
+      width: 100%;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .menu li a {
+      text-decoration: wavy;
+      color: #fff;
+      padding: 20px 40px;
+    }
+
+    .boton-menu:hover {
+      color: #37cde1; /* Cambiar el color del texto a verde cuando se hace hover */
+    }
+
+    .boton-menu:active {
+      /*Enciara sha d posar algo*/
+    }
+
+    .contacto textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: #ffffff; /* Cambiar el color de fondo de la caja de mensaje a gris oscuro */
+      color: #fff; /* Cambiar el color de texto de la caja de mensaje a blanco */
+    }
+
+    .contacto {
+      background-color: #4E9B4E;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .contacto h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contacto p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contacto label {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .contacto input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .contacto input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* Estilos para el slideshow */
+    .slideshow-container {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      height: 400px; /* Adjust the height according to your needs */
+      overflow: hidden;
+      position: relative;
+      display: flex; /* Add display:flex to enable flexbox */
+      justify-content: center; /* Center-align the images horizontally */
+      align-items: center; /* Center-align the images vertically */
+    }
+
+
+    .slideshow-container img {
+      display: none;
+      max-width: 100%; /* Use max-width instead of width */
+      height: auto;
+      object-position: 0cqmax; /* Use object-fit: contain to maintain aspect ratio */   
+    }
+
+
+  </style>
+</head>
+<link rel="icon" href="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/logo.png" type="image/x-icon">
+<body>
+  <header>
+    <div class="titol">
+    <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/logo.png" alt="Imagen logo" style="width: 70px; height: 70px; position: absolute; top: 60px; left: 50px;">
+    <h1 style = "position: absolute; top: 38px; font-size: 50px; left: 125px;"> Transtop Systems</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li><a href="seccioProjectes" class="boton-menu" style="color: #000;"><strong>Proyectos</strong></a></li>
+      <li><a href="#seccioProductes" class="boton-menu" style="color: #000;"><strong>Productos</strong></a></li>
+      <li><a href="#seccioSobreNos" class="boton-menu" style="color: #000;"><strong>Sobre Nosotros</strong></a></li>
+      <li><a href="#seccioContacte" class="boton-menu" style="color: #000;"><strong>Contacto</strong></a></li>
+    </ul>
+  </div>
+ </header>
+
+ <p style="text-align: center; color: #000; font-size: 26px; font-style: oblique;"><strong>Líderes en biomasa</strong></p>
+ <p style="text-align: center;">Especialistas en mecanizados de distribución de combustibles sostenibles.</p>
+ 
+
+  <section class="slideshow">
+    <div class="slideshow-container">
+      <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/pelets3.jpg" alt="Imagen 1">
+      <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/pelets2.jpg" alt="Imagen 2">
+      <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/pelets1.jpg" alt="Imagen 3">
+    </div>
+  </section>
+
+
+  <main>
+    <section> 
+      <p id="seccioProjectes" style="font-size: 24px; color: #000; text-align: center;">
+        A continuación, algunos ejemplos de empresas con las que hemos colaborado y exitosos proyectos que hemos llevado a cabo
+      </p>
+      <li>
+        <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/pobla.jpg" style="width: 200px; height: 150px;">
+        <p style="color: #000; font-size: 15px;">
+          En 2018, montamos la primera caldera de biomasa de la Pobla de L'Illet
+        </p>
+      </li>
+      <li>
+        <img src="" style="">
+        <p>
+          En 2020, montamos en NomEmpresa una caldera de biomasa de grandes dimensiones en Portugal
+        </p>
+      </li>
+    </section>
+
+    <section class="client">
+      <p id="seccioProductes" style="font-size: 40px; color: #000000;">
+        En Transtop ofrecemos una <strong>amplia gama</strong> de calderas biomasa para que usted encuentre la que se ajuste mejor a su proyecto
+      </p>
+      <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/10kw.png" style="width: 1300px; height: 400px;">
+      <p style="font-size: 28px; color: #000000;">
+        Tenemos calderas de diferentes potencias, para que puedas adaptarte dependiendo de tus <strong>necesidades</strong>
+      </p>
+    </section>
+
+    <section class="informacion">
+      <p id="seccioSobreNos" style="font-size: 29px; padding:10px; text-align: center; color: #000000; background-color: #d1d0d0; padding-left: 0px;">
+        Ofrecemos <strong>soluciones energéticas</strong> basadas en la construcción e implementación de <strong>calderas biomasa.</strong>
+      </p>
+      <div style="display: flex; align-items: center;">
+        <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/biomasaCicle.jpg" alt="Imagen ciclo" style="width: 660px; height: 450px; margin-bottom: 60px;">
+        <p style="color: #000000; font-size: 20px; padding:30px; margin-left: 20px; background-color: #d1d0d0;">
+          Los casi 25 años de experiencia en el sector nos permiten garantizar la mejor calidad en nuestros productos, para que sean sostenibles y eficientes. Tratamos cada proyecto de manera individual, creando un detallado plan para generar la solución más eficaz para nuestros clientes, permitiendo una reducción significativa en el consumo de energía y una menor huella ambiental.
+        </p>
+      </div>
+      <ul class="image-list">
+        <li>
+          <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/recordTime.png" alt="Imagen rellotge" style="width: 100px; height: 100px;">
+          <p style="color: #000;">
+            <strong>Gestión ágil y eficiente del tiempo</strong>
+          </p>
+          <p style="color: #000000;">
+            Nos destacamos por nuestra eficiencia, realizando proyectos con rapidez y manteniendo altos estándares de calidad en cada entrega.
+          </p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/ahorro.png" alt="Imagen cerdito" style="width: 100px; height: 100px;">
+          <p style="color: #000;">
+            <strong>Competitividad de precios garantizada</strong>
+          </p>
+          <p style="color: #000000;">
+            Nuestros precios se destacan por su competitividad, brindando soluciones de calidad a precios excepcionales.
+          </p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/mapa.png" alt="Imagen mapa" style="width: 100px; height: 100px;">
+          <p style="color: #000;"> 
+            <strong>Planificación exhaustiva para cada proyecto</strong>
+          </p>
+          <p style="color: #000000;">
+            Enfocados en la excelencia, desarrollamos planes detallados para cada proyecto, asegurando una ejecución precisa y resultados exitosos.
+          </p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/gente.png" alt="Imagen gent" style="width: 100px; height: 100px;">
+          <p style="color: #000000;">
+            Contamos con la confianza de numerosos clientes satisfechos que han depositado su confianza en nuestra labor, respaldando nuestra experiencia y calidad en cada proyecto.
+          </p>
+        </li>
+      </ul>   
+    </section>
+  </main>
+
+  <div class="contacto">
+    <h2 id="seccioContacte">Contáctanos</h2>
+    <p style="margin-bottom: 50px;">Utilize el formulario a continuación para enviarnos tus consultas o comentarios.</p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <input type="mensaje" id="mensaje" name="mensaje" style="min-height:50px;" required></input>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <script>
+    // Script para el slideshow
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Cambia las imágenes cada 2 segundos (ajusta el tiempo según tus necesidades)
+    }
+
+    // Animación de botones del menú
+    var menuButtons = document.getElementsByClassName("boton-menu");
+    for (var i = 0; i < menuButtons.length; i++) {
+      menuButtons[i].addEventListener("mouseover", function() {
+        this.style.color = "#4E9B4E"; // Cambia el color de las letras al verde de la banda
+      });
+      menuButtons[i].addEventListener("mouseout", function() {
+        this.style.color = "#fff"; // Cambia el color de las letras al blanco
+      });
+      menuButtons[i].addEventListener("click", function() {
+        this.style.outlineColor = "#333"; // Oscurece el contorno del botón
+      });
+    }
+  </script>
+</body>
+</html>  
