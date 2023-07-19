@@ -7,6 +7,24 @@
   <style>
     /* Estilos CSS básicos */
 
+  @font-face {
+    font-family: 'Rubik';
+    src: url(path/to/rubik-regular.woff2) format('woff2'),
+        url(path/to/rubik-regular.woff) format('woff');
+    /* Add additional font weights and styles if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Almarai';
+    src: url(path/to/almarai-regular.woff2) format('woff2'),
+        url(path/to/almarai-regular.woff) format('woff');
+    /* Add additional font weights and styles if available */
+    font-weight: normal;
+    font-style: normal;
+  }
+
     html {
       scroll-behavior: smooth;
     }
@@ -105,7 +123,7 @@
     }
 
     .contacto {
-      background-color: #4E9B4E;
+      background-color: #50DE79;
       padding: 20px;
       text-align: center;
       color: #fff;
@@ -130,6 +148,14 @@
     .contacto label {
       font-size: 18px;
       margin-bottom: 5px;
+    }
+
+    .buttonContacto {
+      padding: 25px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 900;
+      background: linear-gradient(to right, #90f090, #34a53b);
     }
 
     .contacto input,
@@ -184,10 +210,10 @@
   </div>
   <div class="menu">
     <ul>
-      <li><a href="seccioProjectes" class="boton-menu" style="color: #000;"><strong>Proyectos</strong></a></li>
-      <li><a href="#seccioProductes" class="boton-menu" style="color: #000;"><strong>Productos</strong></a></li>
-      <li><a href="#seccioSobreNos" class="boton-menu" style="color: #000;"><strong>Sobre Nosotros</strong></a></li>
-      <li><a href="#seccioContacte" class="boton-menu" style="color: #000;"><strong>Contacto</strong></a></li>
+      <li><a href="seccioProjectes" class="boton-menu" style="color: #000; font-family: 'Rubik', Arial, sans-serif; font-size: 16px;"><strong>Proyectos</strong></a></li>
+      <li><a href="#seccioProductes" class="boton-menu" style="color: #000; font-family: 'Rubik', Arial, sans-serif; font-size: 16px;"><strong>Productos</strong></a></li>
+      <li><a href="#seccioSobreNos" class="boton-menu" style="color: #000; font-family: 'Rubik', Arial, sans-serif; font-size: 16px;"><strong>Sobre Nosotros</strong></a></li>
+      <li><a href="#seccioContacte" class="boton-menu" style="color: #000; font-family: 'Rubik', Arial, sans-serif; font-size: 16px;"><strong>Contacto</strong></a></li>
     </ul>
   </div>
  </header>
@@ -225,63 +251,69 @@
     </section>
 
     <section class="client">
-      <p id="seccioProductes" style="font-size: 43px; color: #000000; text-align: center;">
+      <p id="seccioProductes" style="font-size: 45px; color: #000000; text-align: center; font-family: 'Rubik', Arial, sans-serif;">
         En Transtop ofrecemos una <strong>amplia gama</strong> de calderas biomasa para que usted encuentre la que se ajuste mejor a su proyecto
       </p>
-      <p style="font-size: 28px; color: #000000; text-align: center;">
+      <p style="font-size: 23px; color: #000000; text-align: center; font-family: 'Almarai', Arial, sans-serif;">
         Ofrecemos calderas con diferentes potencias para que puedan adaptarse a sus necesidades, dependiendo de su presupuesto, consumo energético y otros factores. 
       </p>
       <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/10kw.png" style="width: 1300px; height: 400px; margin-bottom: 120px;">
       <p style="font-size: 35px; text-align: center; margin-bottom: 300px; width: 750px; word-wrap: break-word;">
         <strong>¿Necesitas asesoramiento para decidir cuál es la caldera que mejor se adapta a tu proyecto?</strong>
       </p>
+      <button class="buttonContacto">
+        Contáctanos
+      </button>
       
     </section>
 
     <section class="informacion">
-      <p id="seccioSobreNos" style="font-size: 38px; padding:10px; text-align: center; color: #ffffff; background-color: #1c5c2a; margin-bottom: 100px; padding: 10px;">
+      <p id="seccioSobreNos" style="font-size: 47px; padding:10px; text-align: center; color: #000000; margin-bottom: 100px; padding: 10px; font-family: 'Rubik', Arial, sans-serif;">
         Ofrecemos <strong>soluciones energéticas</strong> basadas en el diseño y construcción de <strong>calderas biomasa.</strong>
       </p>
       <div style="display: flex; align-items: center;">
-        <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/biomasaCicle.jpg" alt="Imagen ciclo" style="width: 660px; height: 450px; margin-bottom: 60px;">
-        <p style="color: #000000; font-size: 20px; margin-left: 20px;">
+        <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/planta.jpg" alt="Imagen ciclo" style="width: 700px; height: 420px; margin-bottom: 130px;">
+        <p style="font-family: 'Rubik', Arial, sans-serif;">
+          <strong>Somos innovación</strong>
+        </p>
+        <p style="color: #000000; font-size: 25px; font-family: 'Almarai', Arial, sans-serif; text-align: center; margin-left: 23px; margin-right: 23px;">
           Los casi 25 años de experiencia en el sector nos permiten garantizar la mejor calidad en nuestros productos, para que sean sostenibles y eficientes. Tratamos cada proyecto de manera individual, creando un detallado plan para generar la solución más eficaz para nuestros clientes, permitiendo una reducción significativa en el consumo de energía y una menor huella ambiental.
         </p>
       </div>
       <ul class="image-list">
         <li>
           <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/recordTime.png" alt="Imagen rellotge" style="width: 110px; height: 110px;">
-          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px;">
+          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px; font-family: 'Rubik', Arial, sans-serif;">
             <strong>Gestión ágil y eficiente del tiempo</strong>
           </p>
-          <p style="color: #000000; text-align: center; margin-bottom: 1px;">
+          <p style="color: #000000; text-align: center; margin-bottom: 1px; font-family: 'Almarai', Arial, sans-serif;">
             Nos destacamos por nuestra eficiencia, realizando proyectos con rapidez y manteniendo altos estándares de calidad en cada entrega.
           </p>
         </li>
         <li>
           <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/ahorro.png" alt="Imagen cerdito" style="width: 110px; height: 110px;">
-          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px;">
+          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px; font-family: 'Rubik', Arial, sans-serif;">
             <strong>Competitividad de precios garantizada</strong>
           </p>
-          <p style="color: #000000; text-align: center;">
+          <p style="color: #000000; text-align: center; font-family: 'Almarai', Arial, sans-serif;">
             Nuestros precios se destacan por su competitividad, brindando soluciones de calidad a precios excepcionales.
           </p>
         </li>
         <li>
           <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/mapa.png" alt="Imagen mapa" style="width: 100px; height: 100px;">
-          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px;"> 
+          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px; font-family: 'Rubik', Arial, sans-serif;"> 
             <strong>Planificación exhaustiva para cada proyecto</strong>
           </p>
-          <p style="color: #000000; text-align: center;">
+          <p style="color: #000000; text-align: center; font-family: 'Almarai', Arial, sans-serif;">
             Enfocados en la excelencia, desarrollamos planes detallados para cada proyecto, asegurando una ejecución precisa y resultados exitosos.
           </p>
         </li>
         <li>
           <img src="https://raw.githubusercontent.com/gerardAtienza/web-dev/main/gente.png" alt="Imagen gent" style="width: 100px; height: 100px;">
-          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px;">
+          <p style="color: #000; font-size: 24px; text-align: center; margin-bottom: 1px; font-family: 'Rubik', Arial, sans-serif;">
             <strong>Confianza respaldada por clientes leales</strong>
           </p>
-          <p style="color: #000000; text-align: center; margin-bottom: 300px;">
+          <p style="color: #000000; text-align: center; margin-bottom: 300px; font-family: 'Almarai', Arial, sans-serif;">
             Contamos con la confianza de numerosos clientes satisfechos que han depositado su confianza en nuestra labor, respaldando nuestra experiencia y calidad en cada proyecto.
           </p>
         </li>
