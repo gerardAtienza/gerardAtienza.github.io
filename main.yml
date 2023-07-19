@@ -4,22 +4,22 @@ on:
   workflow_dispatch:
   push:
     branches: 
-    - main
+      - main
 
 env:
   AZURE_WEBAPP_NAME: transtopSystems
-  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
       
-    - name: Deployment
-      uses: azure/webapps-deploy@v2
-      with: 
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        package: .
+      - name: Deployment
+        uses: actions/webapps-deploy@v2
+        with: 
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ''
+          package: '.'
